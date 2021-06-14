@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /bank/api/v1
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/bank
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+
